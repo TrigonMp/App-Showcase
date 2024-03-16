@@ -1,0 +1,5 @@
+DirectoryIndex index.html
+
+location / {
+    index index.html;
+}

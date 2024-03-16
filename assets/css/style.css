@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("../IRANSansXV.4d78c4d.woff") format('woff');
+  }
+  * {
+    box-sizing: border-box;
+  }
+      body {
+          font-family: IRANSans;
+          margin: 0;
+          padding: 0;
+          font-weight: 600;
+          background-color: #181818;
+          background-image: url("https://res.cloudinary.com/dyvjyrdxx/image/upload/v1709524110/odviposeeu6qlxbqcjnw.png") !important;
+          background-size: 200px 200px !important;
+          background-position: 0 0 !important;
+      }
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+      h1 {
+          margin: 0;
+      }
+      section {
+          background-color: #181818;
+          box-shadow: 0 0 9px 0 #242424;
+          margin-top: 20px;
+          color: white;
+          border-radius: 10px;
+          padding: 20px;
+      }
+      .platform {
+          margin-bottom: 20px;
+          padding: 20px !important;
+      }
+      .platform h2 {
+          margin-top: 0;
+          padding: 20px;
+      }
+      .download-button {
+          display: inline-block;
+          border-style: solid;
+          border-width: 2px;
+          border-color: #ca9708;
+          color: #ffffff;
+          padding: 10px 10px;
+          margin-top: 10px;
+          text-decoration: none;
+          border-radius: 10px;
+      }
+      .download-button:hover {
+          background-color: #ca9708;
+          transition: ease-in 0.1s;
+      }
+      .vibe-logo {
+        display: inline-flex;
+        width: 200px;
+        justify-content: flex-end;
+        align-content: flex-end;
+        margin-bottom: -15px;
+        text-align: right;
+        direction: rtl;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+      .left-side {
+        text-align: left;
+        color: #fff;
+          text-decoration: none;
+          margin: 0 5px;
+          margin-top: -20px;
+          border-radius: 5px;
+      }
+    .col-img {
+      width: 250px;
+      margin-bottom: -160px;
+      display: inline;
+      justify-content: center;
+      align-content: start;
+    }
+    .col-img2 {
+      width: 400px;
+      margin-bottom: -160px;
+      display: inline;
+      justify-content: center;
+      margin-top: 25px;
+      align-content: start;
+    }
+
+    ::selection {
+        background-color: #ca9708;
+    }
+
+    .svg-logo {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+
+    .nav {
+        height: 50px;
+        width: 100%;
+        position: relative;
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+      }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 6px;
+        text-decoration: none;
+        color: #efefef;
+        border-radius: 10px;
+      }
+      
+      .nav > .nav-links > a:hover {
+        background-color: #ca96084d;
+        transition: all ease-in 0.2s;
+      }
+      
+      .nav > #nav-check {
+        display: none;
+      }
+      
+      @media (max-width:1024px) {
+        .nav > .nav-btn {
+          display: inline-block;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+        .nav > .nav-btn > label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          margin-top: 5px;
+          margin-right: 5px;
+        }
+        .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+          background-color: rgba(231, 138, 16, 0.3);
+        }
+        .nav > .nav-btn > label > span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid #eee;
+        }
+        .nav > .nav-links {
+          position: absolute;
+          display: block;
+          width: 100%;
+          text-align: center;
+          background-color: #181818;
+          background-image: url("https://res.cloudinary.com/dyvjyrdxx/image/upload/v1709524110/odviposeeu6qlxbqcjnw.png") !important;
+          background-size: 200px 200px !important;
+          background-position: 0 0 !important;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          left: 0px;
+        }
+        .nav > .nav-links > a {
+          display: block;
+          width: 100%;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .nav > #nav-check:not(:checked) ~ .nav-links {
+          height: 0px;
+        }
+        .nav > #nav-check:checked ~ .nav-links {
+          margin-top: 10px;
+          height: calc(100vh - 50px);
+          overflow-y: auto;
+        }
+        .vibe-logo {
+            margin-bottom: 20px;
+        }
+        .col-img {
+          width: 150px;
+          margin: 0;
+          margin-bottom: -100px;
+          margin-top: 35px !important;
+        }
+        .col-img2 {
+          width: 200px;
+          margin-top: 20px !important;
+          margin: 0;
+          margin-bottom: -100px;
+        }
+      }
+      .left-navbar {
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ca9708;
+        padding: 9px;
+        font-size: small;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+      }
+
+      .left-navbar:hover {
+        background-color: #ca9708;
+        transition: all ease-in 0.2s;
+      }
+
+
+      .footer-cover {
+        text-align: center;
+        margin: 0;
+        color: white;
+        background-color: #ca9708;
+        text-transform: uppercase;
+      }
